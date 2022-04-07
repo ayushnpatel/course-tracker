@@ -9,6 +9,9 @@ load_dotenv()
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 twilio_number = os.environ['TWILIO_NUMBER']
+ayush_number = os.environ['AYUSH_NUMBER']
+shradha_number = os.environ['AYUSH_NUMBER']
+sai_number = os.environ['AYUSH_NUMBER']
 
 def write_file(filename,data):
     if os.path.isfile(filename):
@@ -27,11 +30,11 @@ def print_time_and_date():
 
 def check_people_to_send_message(course_code, course_name, people):
     if 'ayush' in people:
-        send_text(course_code, course_name, '+17329567363')
+        send_text(course_code, course_name, ayush_number)
     if 'sai' in people:
-        send_text(course_code, course_name, '+19089173705')
+        send_text(course_code, course_name, sai_number)
     if 'shradha' in people:
-        send_text(course_code, course_name, '+17325403905')
+        send_text(course_code, course_name, shradha_number)
 
 def send_text(course_code, course_name, number):
     try:
