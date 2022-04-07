@@ -3,6 +3,7 @@ import os
 import requests
 import json
 from twilio.rest import Client
+from datetime import datetime
 
 load_dotenv()
 
@@ -75,8 +76,5 @@ for course_code in data:
             courses.pop(course_code, None)
 
 json.dump(courses, open('courses.json', 'w'))
-
-from datetime import datetime
-import os
  
 write_file('logs.txt' , print_time_and_date())
