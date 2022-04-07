@@ -10,8 +10,8 @@ account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 twilio_number = os.environ['TWILIO_NUMBER']
 ayush_number = os.environ['AYUSH_NUMBER']
-shradha_number = os.environ['AYUSH_NUMBER']
-sai_number = os.environ['AYUSH_NUMBER']
+shradha_number = os.environ['SHRADHA_NUMBER']
+sai_number = os.environ['SAI_NUMBER']
 
 def write_file(filename,data):
     if os.path.isfile(filename):
